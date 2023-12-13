@@ -16,16 +16,17 @@ export const tokens = (mode) => ({
           800: '#292929',
           900: '#141414',
         },
+        // pink primary
         primary: {
-          100: '#d0d1d5',
-          200: '#a1a4ab',
-          300: '#727681',
-          400: '#1F2A40',
-          500: '#141b2d',
-          600: '#101624',
-          700: '#0c101b',
-          800: '#080b12',
-          900: '#040509',
+          100: '#fbf5f3',
+          200: '#f8ebe7',
+          300: '#f4e2db',
+          400: '#f1d8cf',
+          500: '#edcec3',
+          600: '#bea59c',
+          700: '#8e7c75',
+          800: '#5f524e',
+          900: '#2f2927',
         },
         greenAccent: {
           100: '#dbf5ee',
@@ -73,6 +74,19 @@ export const tokens = (mode) => ({
           800: '#c2c2c2',
           900: '#e0e0e0',
         },
+
+        primary1: {
+          100: '#f6ebe9',
+          200: '#edd6d2',
+          300: '#e4c2bc',
+          400: '#dbada5',
+          500: '#d2998f',
+          600: '#a87a72',
+          700: '#7e5c56',
+          800: '#543d39',
+          900: '#2a1f1d',
+        },
+
         primary: {
           100: '#040509',
           200: '#080b12',
@@ -210,4 +224,3 @@ export const useMode = () => {
   const theme = useMemo(() => createTheme(themeSettings(mode)), [mode]);
   return [theme, colorMode];
 };
-
